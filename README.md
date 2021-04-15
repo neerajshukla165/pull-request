@@ -1,3 +1,22 @@
+# pull-request
+Pull an image or a repository from a registry
+
+Syntax:
+````
+docker pull [OPTIONS] NAME[:TAG]
+````
+## Example
+
+Code:
+````
+docker pull centos
+````
+Output:
+![pull centos](https://user-images.githubusercontent.com/79436509/114931514-f718bd80-9e53-11eb-8035-092055b88862.JPG)
+
+
+
+
 # push-request
 
 Docker Push is a command that is used to push or share a local Docker image or a repository to a central repository; it might be a public registry like https://hub.docker.com or a private registry or a self-hosted registry. We need to login to the registry before pushing the Docker image to the registry if proper authentication is setup. Data pushed to the registry is compressed before sending it to the registry.
@@ -64,14 +83,4 @@ Output:
 In the above example, we can see that the Docker image is successfully pushed to the hub.docker. com and we can confirm it by logging to hub.docker.com. There should be a new repository created with nginx and it has a Docker image with the latest tag
 
 ![docker-hub](https://user-images.githubusercontent.com/79436509/114930603-d2701600-9e52-11eb-89e3-f8ebda02e6cf.JPG)
-
-
-## Advantages of Docker Push
-Below are some advantages:
-
- 1. SharingDocker images: We can easily share our Docker images with our colleagues, teams by pushing the Docker image to the registry.
-
- 2. KeepDocker Images centralize: We can keep our Docker images to a centralized repository by pushing the Docker images to a registry so that other teams or individuals can use   it whenever they require it.
-
- 3. Provide security to Docker images: We can digitally sign the Docker image before pushing it to the registry that helps us to avoid maliciouslyDocker images to be pushed to     the registry and prevents unexpected outage.
 
